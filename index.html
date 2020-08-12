@@ -24,7 +24,7 @@
 
   <!-- Put your site title here -->
   <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
+    Avinash
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
@@ -34,15 +34,24 @@
 </head>
 
 <body>
+  <!--particles js background-->
+
 
   <!-- ***** Header ***** -->
+  <div id="particles-js"></div>
+
+
+
+
 
   <header class="header" role="banner" id="top">
-    <div class="row">
+    <div class="row" style="float: right;margin-right: 20px;">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Projects</a></li>
+
+          <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -52,15 +61,27 @@
         </ul>
       </nav>
     </div>
+
     <div class="header__text-box row">
+
+
       <div class="header__text">
+
+        <div class="profile">
+          <img style="max-width: 300px;max-height: 300px; border-radius: 1200px;" src="./images/profile.jpg">
+        </div>
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Avinash</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p> Web Developer | Competitive Programmer</p>
+        <a href="#work" ><svg id="more-arrows" >
+          <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+          <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+          <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+        </svg>
+        </a>
       </div>
     </div>
   </header>
@@ -78,103 +99,173 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Cykka website</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                An angular website to familiarise the user to different facilities available at Omnibulls.
               </p>
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>Angular 9</li>
+                <li>Typescript</li>
+                <li>AOS  animation library</li>
+                
               </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="#" target="_blank" class="link__text">
+                 Link will be available soon<span>&rarr;</span>
                 </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                <a href="#work" title="Private Repo" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/cykaa.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Vindyasri</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A simple website built using HTML, CSS and javascript to display  static data  and the on going projects of the organisation.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+               
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://vindyasari.com/" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/avinash0705/Vindyasari">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/vindyasri.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+       
+        </div>
+      </div>
+    </section>
+<div >
+  <div style="width: 100%;height: 10px; background-color: #0c9673;;"></div>
+</div>
+    <!--******Projects*******-->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Airsy</h3>
+              <p>
+                A progressive web app which allows users to consume different facilities in order to reach out to the Airport such as taxi service, porter, online check In  etc. all at the same platform.              </p>
+              <ul class="work__list">
+                <li>Angular 9</li>
+                <li>Nodejs</li>
+                <li>Firebase</li>
+                <li>PWA</li>
+                
+              </ul>
+
+              <div class="work__links">
+                <a href="#" target="_blank" class="link__text">
+                 Link to the snap shots <span>&rarr;</span>
+                </a>
+                <a href="#work" title="Private Repo" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Airsy.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>Angular socket</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
+                A chatting web app  built using angular and socket.io library in order to implement  bi-directional communication session between the browser and the server   </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Websocket</li>
+                <li>socket.io library</li>
+                <li>Angular</li>
+               
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="" class="link__text">
+                  Link is Not available now <span>&rarr;</span>
                 </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+               
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <img src="./images/AngularSocket.png" class="work__image" alt="Project 1" />
             </div>
           </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Interactive Portfolio</h3>
+              <p>
+                  An Interactive portfolio website built using Html, css and javascript. <br> <span style="font-size: x-small;">inspired by a random developer at github</span>  </p>
+              <ul class="work__list">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+               
+              </ul>
+
+              <div class="work__links">
+                <a href="" class="link__text">
+                  Already there &#128517; <span>&rarr;</span>
+                </a>
+               
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Portfolio.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+       
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <div >
+      <div style="width: 100%;height: 10px; background-color: #0c9673;;"></div>
+    </div>
+    <!-- ***** Skills ***** -->
 
     <section class="client" id="clients">
       <div class="row">
-        <h2>Clients</h2>
+        <h2>Skills</h2>
         <div class="client__logos">
           <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+          <img src="./images/Angular.jpg" class="client__logo" alt="Angular" />
+          <img src="./images/Nodejs.jpg" class="client__logo" alt="Nodejs" />
+          <img src="./images/Firebase.jpg" class="client__logo" alt="Firebase" />
+          <img src="./images/mongodb.jpeg" class="client__logo" alt="mongodb" />
+          <img src="./images/mysql.png" class="client__logo" alt="mysql" />
+          <img src="./images/html.png" class="client__logo" alt="html" />
+          <img src="./images/css.jpeg" class="client__logo" alt="css" />
+          <img src="./images/javascript.jpg" class="client__logo" alt="javascript" />
+
+
         </div>
       </div>
     </section>
@@ -187,19 +278,51 @@
         <div class="about__content">
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
+            <div style="margin-left: -70%;">
+              <h3 class="education"> Education </h3>
+              <ul style="list-style-type: square;">
+                <li>
+                  <h4>7th Sem Computer Science Student @NITP</h4>
+                </li>
+                <li>
+                  <h4>Academic score :- 8.43/10</h4>
+                </li>
+              </ul>
+            </div>
+           
+            <br>  
+            <div>
+              <h3 class="education"> Subject Knowledge </h3>
+              <ul style="list-style-type: square;">
+                <li>
+                  <h4>DS & Algo | DBMS | OS | CN</h4>
+                </li>
+                <li>
+                  <h4>COA | Software Engineering</h4>
+                </li>
+              </ul>
+            </div>
+           
+            <br>
+            <div style="margin-left: -70%;">
+              <h3 class="education"> Hobbies </h3>
+              <ul style="list-style-type: square;">
+                <li>
+                  <h4>Web Development | Competitive Programming</h4>
+                </li>
+                <li>
+                  <h4>Badminton | Carrom</h4>
+                </li>
+              </ul>
+            </div>
+           <br>
             <!-- Provide a link to your resume -->
             <a href="#" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" style="max-height: 500px;" src="./images/profile.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -210,18 +333,14 @@
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
+      <h2>Let's work</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          Are you working on a Progressive  web app or making something out of the box using Angular or wanna give me any tips/advices or just want to say "Hi 👋" in any case feel free to Let me know. I
+          usually respond quickly. 😊 You can mail me if you want to share ideas or life.
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <!--  email --> 
+        <a href="mailto:avinash7may@gmail.com" class="btn">avinash7may@gmail.com</a>
       </div>
     </div>
   </section>
@@ -232,45 +351,44 @@
     <div class="row">
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
+       
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+          <a href="https://github.com/avinash0705/" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          <a href="https://www.facebook.com/imavi007/" title="Link to facebook Profile">
+            <img style="filter: grayscale(98%);" src="./images/facebook1.svg" class="footer__social-image" alt="Codepen">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/avinash-kumar-singh-19016b190/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+              alt="Linkedin">
           </a>
         </li>
       </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+        &copy; 2020 -  D&D by <a href="#" class="link">Avinash</a>.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
+     
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
+
   <script src="./index.js"></script>
+
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </body>
 
 </html>

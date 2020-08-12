@@ -15,6 +15,24 @@
     font-weight: 400;
     src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
+@font-face {
+    font-family: 'typer';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/TravelingTypewriter.ttf') format('woff');
+}
+@font-face {
+    font-family: 'walker';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Walk-Around-the-Block.ttf') format('woff');
+}
+@font-face {
+    font-family: 'juf';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/juf.ttf') format('woff');
+}
 
 * {
     margin: 0;
@@ -23,6 +41,7 @@
 }
 
 :root {
+  
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
     --font-size-medium: 2.8rem;
@@ -35,7 +54,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #0c9673;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -53,6 +72,43 @@
 
     --border-light: 1px solid rgb(36, 35, 35);
 }
+
+/* Arrow & Hover Animation */
+#more-arrows {
+    width: 75px;
+    height: 65px;
+  }
+  #more-arrows:hover polygon {
+    fill: #0c9673;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  #more-arrows:hover polygon.arrow-bottom {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+  }
+  #more-arrows:hover polygon.arrow-top {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+  }
+  
+  polygon {
+    fill:#0c9673;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  polygon.arrow-middle {
+    opacity: 0.75;
+  }
+  polygon.arrow-top {
+    opacity: 0.5;
+  }
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+  }
 
 html {
     font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
@@ -74,7 +130,11 @@ body {
     line-height: var(--line-height-normal);
     background: var(--black);
     overflow-x: hidden;
+    cursor: url(./images/pointe.png), auto;
+
 }
+.btn-link {  cursor: url(./images/pointe.png), auto; }
+a.btn { cursor: url(./images/pointe.png), auto;}
 
 .row {
     max-width: var(--container-max-width);
@@ -122,7 +182,7 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Jost', sans-serif;
+    font-family: 'typer', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
@@ -153,6 +213,15 @@ h2::after {
     background: var(--pink);
     margin: var(--gutter-small) 0;
 }
+.education::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+}
+
 
 h3 {
     font-size: var(--font-size-medium-1);
@@ -189,10 +258,15 @@ p {
 
 a {
     color: var(--white);
-    font-weight: 400;
+    font-weight: 100;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
     outline: 2px solid transparent;
+}
+a.nav__link{
+   font-family: 'juf', sans-serif;
+    font-size: xxx-large;
+
 }
 
 ::-moz-focus-inner {
@@ -390,13 +464,16 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
+    cursor: url(./images/pointe.png), auto;
     color: var(--pink);
+    transform: scale(1.2);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
     background: var(--pink);
+    
 }
 
 /* --------------------------------------- */
@@ -404,8 +481,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+   
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -489,6 +565,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
+    border: 2px solid #0c9673; ;
+    margin-bottom: var(--gutter-normal);
+}
+.work__image-box :hover {
+    transform: scale(1.4);
+    border: 2px solid #0c9673; ;
     margin-bottom: var(--gutter-normal);
 }
 
@@ -512,12 +594,20 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+
 }
 
+
 .client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+    filter: invert(100%) grayscale(100%) opacity(.8);
+    height: 10.5rem;
+    max-width: 20rem;
+    padding-right: 5rem;;
+}
+.client__logo:hover{
+    transform: scale(1.4);
+    filter: none;
+   
 }
 
 @media(max-width: 1240px) {
